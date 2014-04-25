@@ -18,7 +18,7 @@ class MarkersControllerTest < ActionController::TestCase
 
   test "should create marker" do
     assert_difference('Marker.count') do
-      post :create, marker: { latitude: @marker.latitude, longitude: @marker.longitude, ownerid: @marker.ownerid }
+      post :create, marker: { description: @marker.description, latitude: @marker.latitude, longitude: @marker.longitude, name: @marker.name }
     end
 
     assert_redirected_to marker_path(assigns(:marker))
@@ -35,7 +35,7 @@ class MarkersControllerTest < ActionController::TestCase
   end
 
   test "should update marker" do
-    patch :update, id: @marker, marker: { latitude: @marker.latitude, longitude: @marker.longitude, ownerid: @marker.ownerid }
+    patch :update, id: @marker, marker: { description: @marker.description, latitude: @marker.latitude, longitude: @marker.longitude, name: @marker.name }
     assert_redirected_to marker_path(assigns(:marker))
   end
 

@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Ownerid:</strong>
-  <%= @marker.ownerid %>
+  <strong>Name:</strong>
+  <%= @marker.name %>
 </p>
 
 <p>
-  <strong>Longitude:</strong>
-  <%= @marker.longitude %>
+  <strong>Description:</strong>
+  <%= @marker.description %>
 </p>
 
 <p>
   <strong>Latitude:</strong>
   <%= @marker.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @marker.longitude %>
 </p>
 
 <%= link_to 'Edit', edit_marker_path(@marker) %> |
