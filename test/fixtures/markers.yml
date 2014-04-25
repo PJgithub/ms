@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ownerid: 1
+  longitude: 9.99
+  latitude: 9.99
+
+two:
+  ownerid: 1
+  longitude: 9.99
+  latitude: 9.99
